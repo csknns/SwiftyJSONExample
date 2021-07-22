@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,11 @@
 		097391E226A92600006F1B58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097391E126A92600006F1B58 /* Assets.xcassets */; };
 		097391E526A92600006F1B58 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097391E426A92600006F1B58 /* Preview Assets.xcassets */; };
 		097391E826A92600006F1B58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097391E626A92600006F1B58 /* LaunchScreen.storyboard */; };
+		097391F226A926A7006F1B58 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 097391F126A926A7006F1B58 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		097391D826A925FE006F1B58 /* SwiftyJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		097391D826A925FE006F1B58 /* SwiftyJSONExampleExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyJSONExampleExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097391DB26A925FE006F1B58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		097391DD26A925FE006F1B58 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		097391DF26A925FE006F1B58 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				097391F226A926A7006F1B58 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +42,7 @@
 		097391CF26A925FE006F1B58 = {
 			isa = PBXGroup;
 			children = (
-				097391DA26A925FE006F1B58 /* SwiftyJSON */,
+				097391DA26A925FE006F1B58 /* SwiftyJSONExample */,
 				097391D926A925FE006F1B58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +50,12 @@
 		097391D926A925FE006F1B58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				097391D826A925FE006F1B58 /* SwiftyJSON.app */,
+				097391D826A925FE006F1B58 /* SwiftyJSONExampleExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		097391DA26A925FE006F1B58 /* SwiftyJSON */ = {
+		097391DA26A925FE006F1B58 /* SwiftyJSONExample */ = {
 			isa = PBXGroup;
 			children = (
 				097391DB26A925FE006F1B58 /* AppDelegate.swift */,
@@ -64,7 +66,7 @@
 				097391E926A92600006F1B58 /* Info.plist */,
 				097391E326A92600006F1B58 /* Preview Content */,
 			);
-			path = SwiftyJSON;
+			path = SwiftyJSONExample;
 			sourceTree = "<group>";
 		};
 		097391E326A92600006F1B58 /* Preview Content */ = {
@@ -78,9 +80,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		097391D726A925FE006F1B58 /* SwiftyJSON */ = {
+		097391D726A925FE006F1B58 /* SwiftyJSONExampleExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 097391EC26A92600006F1B58 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 097391EC26A92600006F1B58 /* Build configuration list for PBXNativeTarget "SwiftyJSONExampleExample" */;
 			buildPhases = (
 				097391D426A925FE006F1B58 /* Sources */,
 				097391D526A925FE006F1B58 /* Frameworks */,
@@ -90,9 +92,12 @@
 			);
 			dependencies = (
 			);
-			name = SwiftyJSON;
+			name = SwiftyJSONExampleExample;
+			packageProductDependencies = (
+				097391F126A926A7006F1B58 /* SwiftyJSON */,
+			);
 			productName = SwiftyJSON;
-			productReference = 097391D826A925FE006F1B58 /* SwiftyJSON.app */;
+			productReference = 097391D826A925FE006F1B58 /* SwiftyJSONExampleExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -109,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 097391D326A925FE006F1B58 /* Build configuration list for PBXProject "SwiftyJSON" */;
+			buildConfigurationList = 097391D326A925FE006F1B58 /* Build configuration list for PBXProject "SwiftyJSONExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,11 +123,14 @@
 				Base,
 			);
 			mainGroup = 097391CF26A925FE006F1B58;
+			packageReferences = (
+				097391F026A926A7006F1B58 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 097391D926A925FE006F1B58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				097391D726A925FE006F1B58 /* SwiftyJSON */,
+				097391D726A925FE006F1B58 /* SwiftyJSONExampleExample */,
 			);
 		};
 /* End PBXProject section */
@@ -287,14 +295,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftyJSON/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyJSONExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftyJSON/Info.plist;
+				INFOPLIST_FILE = SwiftyJSONExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyJSON;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyJSONExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,14 +315,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftyJSON/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftyJSONExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SwiftyJSON/Info.plist;
+				INFOPLIST_FILE = SwiftyJSONExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyJSON;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SwiftyJSONExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		097391D326A925FE006F1B58 /* Build configuration list for PBXProject "SwiftyJSON" */ = {
+		097391D326A925FE006F1B58 /* Build configuration list for PBXProject "SwiftyJSONExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				097391EA26A92600006F1B58 /* Debug */,
@@ -333,7 +341,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		097391EC26A92600006F1B58 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		097391EC26A92600006F1B58 /* Build configuration list for PBXNativeTarget "SwiftyJSONExampleExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				097391ED26A92600006F1B58 /* Debug */,
@@ -343,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		097391F026A926A7006F1B58 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		097391F126A926A7006F1B58 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 097391F026A926A7006F1B58 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 097391D026A925FE006F1B58 /* Project object */;
 }
